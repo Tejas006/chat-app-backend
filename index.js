@@ -7,7 +7,9 @@ const socket = require("socket.io")
 const app = express()
 require("dotenv").config()
 
-app.use(cors())
+app.use(cors({
+    origin: ["http://localhost:5000","https://chat-app.onrender.com"]
+}))
 app.use(express.json())
 
 app.use("/api/auth", userRoutes)
