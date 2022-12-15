@@ -8,7 +8,7 @@ const app = express()
 require("dotenv").config()
 
 app.use(cors({
-    origin: ["http://localhost:5000","https://chat-app.onrender.com"]
+    origin: ["http://localhost:5000","https://chat-app-netcon.onrender.com"]
 }))
 app.use(express.json())
 
